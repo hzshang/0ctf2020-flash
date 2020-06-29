@@ -1,0 +1,31 @@
+#ifndef BIOS_H
+#define BIOS_H
+
+/* code */
+#define KERNEL_SRC_BASE 0xbfc10000
+#define KERNEL_BASE 0x80000000
+#define KERNEL_ENTRY 0x80000500
+#define KERNEL_SIZE 0x4000
+#define BIOS_OBF_DATA 0xbfc20000
+#define OBF_SIZE 0x10000
+
+/* stack */
+#define KERNEL_STACK_BASE 0x80480000 + 0x40000
+#define KERNEL_INTR_STACK 0x80400000 + 0x40000
+
+#define BIOS_STACK_BASE 0x80380000 + 0x40000
+#define BIOS_INTR_STACK 0x80300000 + 0x40000
+
+
+/* bss */
+
+#define KERNEL_HEAP 0x80008000
+#define KERNEL_BSS  0x80018000
+
+#define BIOS_BSS  0x80020000
+#define BIOS_HEAP 0x80028000
+
+
+#define TIMER_INTR 0x1000
+
+#endif

@@ -1,0 +1,14 @@
+*.elf
+*.o
+gdbinit
+.gdb_history
+*.s
+*.So
+*idb
+src/kernel/vm.S
+*.bin
+*.bin.enc
+*flash
+*flash_server
+*tar.gz
+*wrapper
